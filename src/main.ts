@@ -8,8 +8,6 @@ async function bootstrap() {
   
   app.enableCors({
     origin: 'https://nest.networkmanager.pl',
-    credentials: true,
-    optionsSuccessStatus: 200,
   });
 
   await app.listen(3001);
