@@ -6,9 +6,7 @@ import {
 } from '@nestjs/websockets';
 
 @WebSocketGateway(3003, {
-  cors: {
-    origin: '*',
-  },
+  cors: ['*', 'https://mega-app-react-nest.herokuapp.com'],
 })
 export class ChatGateway {
   @WebSocketServer()
